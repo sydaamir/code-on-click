@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<student>
+<std>
+<name> amir</name>
+<usn> 123654</usn>
+</std>
+<std>
+<name>xahid</name>
+<usn>9745544</usn>
+</std>
+</student>
+</xml>

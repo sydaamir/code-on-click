@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    
+  </head>
+  <body>
+    <div class="container">
+	<form action="http://localhost/elearning/downloadfiles.php" method="post">
+  <div align="right">
+  <p class="text-warning"> download this lecture as pdf</p>
+  <input type="hidden" name="filename" value="java loop control.pdf"/>
+  <input type="submit" class="text-primary" value="download"/>
+  </div>
+  </form>
+
+    <p class="lead">There may be a situation when you need to execute a block of code several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.</p>
+<p>Programming languages provide various control structures that allow for more complicated execution paths.</p>
+<p>A <b>loop</b> statement allows us to execute a statement or group of statements multiple times and following is the general form of a loop statement in most of the programming languages &minus;</p>
+<img src="loop_architecture.jpg" alt="Loop Architecture" /> 
+<p>Java programming language provides the following types of loop to handle looping requirements. Click the following links to check their detail.</p>
+<table >
+<tr>
+<th>Sr.No.</th>
+<th style="text-align:center;">Loop &amp; Description</th>
+</tr>
+<tr>
+<td >1</td>
+<td><a href="">while loop</a>
+<p>Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.</p></td>
+</tr>
+<tr>
+<td ">2</td>
+<td><a href="">for loop</a>
+<p>Execute a sequence of statements multiple times and abbreviates the code that manages the loop variable.</p></td>
+</tr>
+<tr>
+<td >3</td>
+<td><a href="">do...while loop</a>
+<p>Like a while statement, except that it tests the condition at the end of the loop body.</p></td>
+</tr>
+</table>
+<h2>Loop Control Statements</h2>
+<p>Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.</p>
+<p>Java supports the following control statements. Click the following links to check their detail.</p>
+<table >
+<tr>
+<th>Sr.No.</th>
+<th style="text-align:center;">Control Statement &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td><a href="">break statement</a>
+<p>Terminates the <b>loop</b> or <b>switch</b> statement and transfers execution to the statement immediately following the loop or switch.</p></td>
+</tr>
+<tr>
+<td >2</td>
+<td><a href="">continue statement</a>
+<p>Causes the loop to skip the remainder of its body and immediately retest its condition prior to reiterating.</p></td>
+</tr>
+</table>
+<h2>Enhanced for loop in Java</h2>
+<p>As of Java 5, the enhanced for loop was introduced. This is mainly used to traverse collection of elements including arrays.</p>
+<h3>Syntax</h3>
+<p>Following is the syntax of enhanced for loop &minus;</p>
+<pre >
+for(declaration : expression) {
+   // Statements
+}
+</pre>
+<ul >
+<li><p><b>Declaration</b> &minus; The newly declared block variable, is of a type compatible with the elements of the array you are accessing. The variable will be available within the for block and its value would be the same as the current array element.</p></li>
+<li><p><b>Expression</b> &minus; This evaluates to the array you need to loop through. The expression can be an array variable or method call that returns an array.</p></li>
+</ul>
+<h3>Example</h3>
+
+<pre >
+public class Test {
+
+   public static void main(String args[]) {
+      int [] numbers = {10, 20, 30, 40, 50};
+
+      for(int x : numbers ) {
+         System.out.print( x );
+         System.out.print(",");
+      }
+      System.out.print("\n");
+      String [] names = {"James", "Larry", "Tom", "Lacy"};
+
+      for( String name : names ) {
+         System.out.print( name );
+         System.out.print(",");
+      }
+   }
+}
+</pre>
+<p>This will produce the following result &minus;</p>
+<h3>Output</h3>
+<pre >
+10, 20, 30, 40, 50,
+James, Larry, Tom, Lacy,
+</pre>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

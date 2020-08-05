@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    
+  </head>
+  <body>
+    
+<div class="container">
+<form action="http://localhost/elearning/downloadfiles.php" method="post">
+  <div align="right">
+  <p class="text-warning"> download this lecture as pdf</p>
+  <input type="hidden" name="filename" value="java modifier types.pdf"/>
+  <input type="submit" class="text-primary" value="download"/>
+  </div>
+  </form>
+<p class="lead">Modifiers are keywords that you add to those definitions to change their meanings. Java language has a wide variety of modifiers, including the following &minus;</p>
+<ul class="list">
+<li><p> Java Access Modifiers</p></li>
+<li><p>Non Access Modifiers</p></li>
+</ul>
+<p>To use a modifier, you include its keyword in the definition of a class, method, or variable. The modifier precedes the rest of the statement, as in the following example.</p>
+<h3>Example</h3>
+<pre >
+<i>public</i> class className {
+   // ...
+}
+
+<i>private</i> boolean myFlag;
+<i>static final</i> double weeks = 9.5;
+<i>protected static final</i> int BOXWIDTH = 42;
+
+<i>public static</i> void main(String[] arguments) {
+   // body of method
+}
+</pre>
+<h2>Access Control Modifiers</h2>
+<p>Java provides a number of access modifiers to set access levels for classes, variables, methods and constructors. The four access levels are &minus;</p>
+<ul >
+<li>Visible to the package, the default. No modifiers are needed.</li>
+<li>Visible to the class only (private).</li>
+<li>Visible to the world (public).</li>
+<li>Visible to the package and all subclasses (protected).</li>
+</ul>
+<h2>Non-Access Modifiers</h2>
+<p>Java provides a number of non-access modifiers to achieve many other functionality.</p> 
+<ul >
+<li><p>The <i>static</i> modifier for creating class methods and variables.</p></li>
+<li><p>The <i>final</i> modifier for finalizing the implementations of classes, methods, and variables.</p></li>
+<li><p>The <i>abstract</i> modifier for creating abstract classes and methods.</p></li>
+<li><p>The <i>synchronized</i> and <i>volatile</i> modifiers, which are used for threads.</p></li>
+</ul>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

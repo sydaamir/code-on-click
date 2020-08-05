@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    
+  </head>
+  <body>
+    <div class="container">
+	<form action="http://localhost/elearning/downloadfiles.php" method="post">
+  <div align="right">
+  <p class="text-warning"> download this lecture as pdf</p>
+  <input type="hidden" name="filename" value="java decision making.pdf"/>
+  <input type="submit" class="text-primary" value="download"/>
+  </div>
+  </form>
+<p class="lead">Decision making structures have one or more conditions to be evaluated or tested by the program, along with a statement or statements that are to be executed if the condition is determined to be true, and optionally, other statements to be executed if the condition is determined to be false.</p>
+<p>Following is the general form of a typical decision making structure found in most of the programming languages &minus;</p>
+<img src="decision_making.jpg" alt="Decision Making" />
+<p>Java programming language provides following types of decision making statements. Click the following links to check their detail.</p>
+<table >
+<tr>
+<th>Sr.No.</th>
+<th style="text-align:center;">Statement &amp; Description</th>
+</tr>
+<tr>
+<td >1</td>
+<td><a href="">if statement</a>
+<p>An <b>if statement</b> consists of a boolean expression followed by one or more statements.</p></td>
+</tr>
+<tr>
+<td >2</td>
+<td><a href="">if...else statement</a>
+<p>An <b>if statement</b> can be followed by an optional <b>else statement</b>, which executes when the boolean expression is false.</p></td>
+</tr>
+<tr>
+<td >3</td>
+<td><a href="">nested if statement</a>
+<p>You can use one <b>if</b> or <b>else if</b> statement inside another <b>if</b> or <b>else if</b> statement(s).</p></td>
+</tr>
+<tr>
+<td >4</td>
+<td><a href="">switch statement</a>
+<p>A <b>switch</b> statement allows a variable to be tested for equality against a list of values.</p></td>
+</tr>
+</table>
+<h2>The ? : Operator</h2>
+<p>We have covered <b>conditional operator ? :</b> in the previous chapter which can be used to replace <b>if...else</b> statements. It has the following general form &minus;</p>
+<pre >
+Exp1 ? Exp2 : Exp3;
+</pre>
+<p>Where Exp1, Exp2, and Exp3 are expressions. Notice the use and placement of the colon.</p>
+<p>To determine the value of the whole expression, initially exp1 is evaluated.</p>
+<ul class="list">
+<li><p>If the value of exp1 is true, then the value of Exp2 will be the value of the whole expression.</p></li>
+<li><p>If the value of exp1 is false, then Exp3 is evaluated and its value becomes the value of the entire expression.</p></li>
+</ul>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
